@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+  </head>
+
+  
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class ="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position abs inside position relative
+        to create tooltips -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="channel-pics/my-channel.jpeg">
+      </div>
+    </header>
+   
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home-icon.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+    
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </a>
+            
+            <div class="video-time">14:20</div>
+          </div>
+          
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/mkbhd">
+                <img class="profile-picture" src="channel-pics/channel-1.jpeg">
+              </a>
+            </div>
+            
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+          
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+          
+              <p class="video-stats">
+                3.4M views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/markiplier">
+                <img class="profile-picture" src="channel-pics/channel-2.jpeg">
+              </a>
+              
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Try Not To Laugh Challenge #9
+              </p>
+          
+              <p class="video-author">
+                Markiplier
+              </p>
+          
+              <p class="video-stats">
+                19M views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=3x4vcFIcCHk">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </a>
+            <div class="video-time">23:36</div>
+          </div>
+          
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/5IVEGUYSFC">
+                <img class="profile-picture" src="channel-pics/channel-3.jpeg">
+              </a>
+            </div>
+            
+            <div class="video-info">
+              <p class="video-title">
+                WE PLAYED AGAINST TOP OF THE LEAGUE IN DIVISION 1
+              </p>
+          
+              <p class="video-author">
+                5IVE GUYS FC
+              </p>
+          
+              <p class="video-stats">
+                12K views &#183; 4 hours ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=s9iPo9YMU70">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </a>
+            
+            <div class="video-time">8:33</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/KennyGunderman">
+                <img class="profile-picture" src="channel-pics/channel-4.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Zero to Full-Time Programmer in 5 Steps
+              </p>
+          
+              <p class="video-author">
+                Kenny Gunderman
+              </p>
+          
+              <p class="video-stats">
+                1.1M views &#183; 7 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=em90X30cEQU">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </a>
+            <div class="video-time">4:08</div>
+          </div>
+          
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/RDCworld1">
+                <img class="profile-picture" src="channel-pics/channel-5.jpg">
+              </a>
+            </div>
+            
+            <div class="video-info">
+              <p class="video-title">
+                How Senseis be when they Obviously have a Favorite Student            </p>
+          
+              <p class="video-author">
+                RDCworld1
+              </p>
+          
+              <p class="video-stats">
+                1.5M views &#183; 4 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=2jqLlCZUCYU">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </a>
+            <div class="video-time">11:33</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/ASCompsMatchCompilations">
+                <img class="profile-picture" src="channel-pics/channel-6.jpg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Dimitar Berbatov - When Football Becomes Art
+              </p>
+          
+              <p class="video-author">
+                ASComps - Match Compilations
+              </p>
+          
+              <p class="video-stats">
+                3.2M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=W4LpLkv9aMM&t=9273s">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </a>
+            <div class="video-time">2:57:33</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/ONEChampionship">
+                <img class="profile-picture" src="channel-pics/channel-7.jpg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                ONE Championship's Top 10 Muay Thai Fights
+              </p>
+          
+              <p class="video-author">
+                ONE Championship
+              </p>
+          
+              <p class="video-stats">
+                2.2M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=fRtFnZGWo5w">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
+            </a>
+            <div class="video-time">4:07</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/TottenhamHotspur">
+                <img class="profile-picture" src="channel-pics/channel-8.jpg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Richarlison's first interview at Tottenham Hotspur! 🇧🇷
+              </p>
+          
+              <p class="video-author">
+                Tottenham Hotspur
+              </p>
+          
+              <p class="video-stats">
+                171K views &#183; 1 day ago
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=2RRupF3TRL0">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
+            </a>
+            <div class="video-time">8:10</div>
+          </div>
+    
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pics/channel-9.jpg">
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                Black Belt Smashes Blue Belt For Your Entertainment & Education | BJJ Rolling Commentary
+              </p>
+          
+              <p class="video-author">
+                Jordan Teaches Jiujitsu
+              </p>
+          
+              <p class="video-stats">
+                19K views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
